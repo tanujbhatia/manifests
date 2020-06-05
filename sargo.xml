@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="base-q.xml"/>
+
+  <remote fetch="https://github.com/b2gos/" name="b2gos"/>
+
+  <!-- Google Pixel 3a / 3a XL -->
+  <project path="device/google/bonito" name="device_google_bonito"  groups="pdk" remote="b2gos" revision="gonk_android-10.0.0_r11" />
+  <project path="device/google/bonito-kernel" name="device/google/bonito-kernel" groups="pdk" revision="refs/tags/android-10.0.0_r36" />
+  <project path="device/google/bonito-sepolicy" name="device/google/bonito-sepolicy" groups="pdk" />
+  <project path="hardware/google/av" name="platform/hardware/google/av" groups="pdk" />
+  <project path="hardware/google/interfaces" name="platform/hardware/google/interfaces" groups="pdk" />
+  <project path="hardware/google/pixel" name="platform/hardware/google/pixel" groups="pdk" />
+  <project path="hardware/qcom/sdm845/bt" name="platform/hardware/qcom/sdm845/bt" groups="pdk" />
+  <project path="hardware/qcom/sdm845/data/ipacfg-mgr" name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" groups="pdk" />
+  <project path="hardware/qcom/sdm845/gps" name="platform/hardware/qcom/sdm845/gps" groups="pdk" />
+  <project path="hardware/qcom/sdm845/media" name="platform/hardware/qcom/sdm845/media" groups="pdk" />
+  <project path="hardware/qcom/sdm845/thermal" name="platform/hardware/qcom/sdm845/thermal" groups="pdk" />
+  <project path="hardware/qcom/sdm845/vr" name="platform/hardware/qcom/sdm845/vr" groups="pdk" />
+  <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" />
+  <project path="external/nos/host/android" name="platform/external/nos/host/android" groups="pdk" />
+  <project path="external/nos/host/generic" name="platform/external/nos/host/generic" groups="pdk" />
+
+</manifest>
