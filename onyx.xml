@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base-q.xml"/>
+  
+  <remote name="lemon"  fetch="https://github.com/Pie-onyx" revision="aosp-10.0" />
+  <remote name="cicada"  fetch="https://github.com/OnePlus-onyx" />
+
+<!-- onyx mod -->
+  <!-- add qcom -->
+  <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk-qcom" />
+  <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom_camera,pdk-qcom" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="platform/hardware/qcom/data/ipacfg-mgr" groups="qcom,pdk-qcom" />
+  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps,pdk-qcom" />
+  <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster,pdk-qcom" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="lemon" revision="aosp-10.0_caf-8974" />
+  <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />
+  <project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />
+  <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
+   <!-- onyx staff -->
+  <project path="external/sony/boringssl-compat" name="external_sony_boringssl-compat" remote="lemon" />
+  <project path="vendor/lemon" name="vendor_lemon" remote="lemon" />
+  <project path="patcher" name="patcher" remote="cicada" revision="gonk_android-10.0.0_r11" />
+  <project name="device_oneplus_onyx" path="device/oneplus/onyx" remote="cicada" revision="gonk_android-10.0.0_r11" depth="1" />
+  <project name="kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="cicada" revision="gonk_android-10.0.0_r11" depth="1" />
+  <project name="vendor_oneplus_onyx" path="vendor/oneplus/onyx" remote="cicada" revision="gonk_android-10.0.0_r11" depth="1" />
+ 
+</manifest>
