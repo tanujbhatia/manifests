@@ -7,7 +7,7 @@
 
   <!-- Google Pixel 3a / 3a XL -->
   <project path="device/google/bonito" name="device_google_bonito"  groups="pdk" remote="b2gos" revision="gonk_android-10.0.0_r11" />
-  <project path="device/google/bonito-kernel" name="device/google/bonito-kernel" groups="pdk" revision="refs/tags/android-10.0.0_r36" />
+  <project path="device/google/bonito-kernel" name="device/google/bonito-kernel" groups="pdk" revision="refs/tags/android-10.0.0_r40" />
   <project path="device/google/bonito-sepolicy" name="device/google/bonito-sepolicy" groups="pdk" />
   <project path="hardware/google/av" name="platform/hardware/google/av" groups="pdk" />
   <project path="hardware/google/interfaces" name="platform/hardware/google/interfaces" groups="pdk" />
