@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <include name="base-q.xml"/>
-
-  <remote fetch="https://github.com/b2gos/" name="b2gos"/>
+  <include name="b2g.xml"/>
 
   <!-- Google Pixel 3a / 3a XL -->
   <project path="device/google/bonito" name="device_google_bonito"  groups="pdk" remote="b2gos" revision="gonk_android-10.0.0_r11" />

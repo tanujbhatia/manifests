@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <include name="base-q.xml"/>
+  <include name="b2g.xml"/>
 
   <project groups="kai" name="device_generic_goldfish" path="device/generic/goldfish" remote="kaios" revision="gonk_android-10.0.0_r11" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
