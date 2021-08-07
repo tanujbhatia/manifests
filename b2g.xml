@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base-q.xml"/>
+
+  <remote fetch="https://github.com/b2gos/" name="b2gos"/>
+
+  <!-- TODO -->
+  <project groups="b2gos" name="tablet-ui" path="gaia/ui" remote="b2gos" revision="gaia-app"/>
+
+  <!--  replace repo -->
+  <remove-project name="platform_build"/>
+  <remove-project name="platform_system_vold"/>
+  <remove-project name="platform_system_core"/>
+
+  <!-- add phh's patches based on "gonk_android-10.0.0_r11" branch of kaiostech's repos -->
+  <project name="platform_build" path="build/make" remote="b2gos" revision="gonk_android-10.0.0_r11" >
+    <copyfile src="core/root.mk" dest="Makefile"/>
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
+    <linkfile src="core" dest="build/core"/>
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh"/>
+    <linkfile src="target" dest="build/target"/>
+    <linkfile src="tools" dest="build/tools"/>
+  </project>
+  <project name="platform_system_core" path="system/core" remote="b2gos" revision="gonk_android-10.0.0_r11" />
+  <project name="platform_system_vold" path="system/vold" remote="b2gos" revision="gonk_android-10.0.0_r11" />
+
+</manifest>
