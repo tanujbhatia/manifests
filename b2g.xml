@@ -3,9 +3,9 @@
   <include name="base-q.xml"/>
 
   <remote fetch="https://github.com/b2gos/" name="b2gos"/>
+  <remote fetch="https://github.com/capyloon/" name="capyloon"/>
 
-  <!-- TODO -->
-  <project groups="b2gos" name="tablet-ui" path="gaia/ui" remote="b2gos" revision="gaia-app"/>
+  <project groups="capyloon" name="nutria" path="nutria" remote="capyloon" revision="main"/>
 
   <!--  replace repo -->
   <remove-project name="platform_build"/>

@@ -5,10 +5,16 @@
 
   <default revision="refs/tags/android-10.0.0_r11" remote="aosp" sync-j="4"/>
 
+  <!-- capyloon repos -->
+  <project groups="capyloon" name="api-daemon" path="gonk-misc/api-daemon" remote="capyloon" revision="main"/>
+  <project groups="capyloon" name="libsignal-protocol-c"
+           path="gonk-misc/api-daemon/support/libsignal-sys/libsignal-protocol-c"
+           remote="capyloon" revision="3a83a4f4ed2302ff6e68ab569c88793b50c22d28"/>
+  <project groups="capyloon" name="gecko-b2g" path="gecko" remote="capyloon" revision="capyloon"/>
+  <project groups="capyloon" name="gonk-misc" path="gonk-misc" remote="capyloon" revision="main"/>
+  <project groups="capyloon" path="system/sepolicy" name="platform_system_sepolicy" remote="capyloon" revision="3d276f83aca5794ab3b9d24fe99199f24ca11702"/>
+
   <!-- KaiOS -->
-  <project groups="kai" name="api-daemon" path="gonk-misc/api-daemon" remote="kaios" revision="main"/>
-  <project groups="kai" name="gecko-b2g" path="gecko" remote="kaios" revision="gonk"/>
-  <project groups="kai" name="gonk-misc" path="gonk-misc" remote="kaios" revision="main"/>
   <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/>
   <project groups="kai" name="gonk-binder" path="gonk-misc/gonk-binder" remote="kaios" revision="master"/>
   
