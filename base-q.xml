@@ -12,7 +12,7 @@
            remote="capyloon" revision="3a83a4f4ed2302ff6e68ab569c88793b50c22d28"/>
   <project groups="capyloon" name="gecko-b2g" path="gecko" remote="capyloon" revision="capyloon"/>
   <project groups="capyloon" name="gonk-misc" path="gonk-misc" remote="capyloon" revision="main"/>
-  <project groups="capyloon" path="system/sepolicy" name="platform_system_sepolicy" remote="capyloon" revision="3d276f83aca5794ab3b9d24fe99199f24ca11702"/>
+  <project groups="capyloon" path="system/sepolicy" name="platform_system_sepolicy" remote="capyloon" revision="capyloon"/>
 
   <!-- KaiOS -->
   <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/>
