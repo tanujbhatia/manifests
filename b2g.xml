@@ -5,7 +5,16 @@
   <remote fetch="https://github.com/b2gos/" name="b2gos"/>
   <remote fetch="https://github.com/capyloon/" name="capyloon"/>
 
+  <!-- capyloon repos -->
+  <project groups="capyloon" name="api-daemon" path="gonk-misc/api-daemon" remote="capyloon" revision="main"/>
+  <project groups="capyloon" name="libsignal-protocol-c"
+           path="gonk-misc/api-daemon/support/libsignal-sys/libsignal-protocol-c"
+           remote="capyloon" revision="3a83a4f4ed2302ff6e68ab569c88793b50c22d28"/>
+  <project groups="capyloon" name="gecko-b2g" path="gecko" remote="capyloon" revision="capyloon"/>
+  <project groups="capyloon" name="gonk-misc" path="gonk-misc" remote="capyloon" revision="main"/>
+  <project groups="capyloon" path="system/sepolicy" name="platform_system_sepolicy" remote="capyloon" revision="capyloon"/>
   <project groups="capyloon" name="nutria" path="nutria" remote="capyloon" revision="main"/>
+  <project groups="capyloon" name="iroh" path="iroh" remote="capyloon" revision="capyloon"/>
 
   <!--  replace repo -->
   <remove-project name="platform_build"/>
