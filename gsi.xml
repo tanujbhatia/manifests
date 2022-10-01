@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <include name="b2g.xml"/>
+  <include name="base-q.xml"/>
 
   <!--  include some repos that belong to "phh" only (not AOSP) -->
   <remote fetch="https://github.com/phhusson" name="phh" />
