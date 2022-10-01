@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote fetch="https://github.com/b2gos/" name="b2gos"/>
   <remote fetch="https://github.com/kaiostech/" name="kaios"/>
 
   <default revision="refs/tags/android-10.0.0_r11" remote="aosp" sync-j="4"/>
@@ -15,7 +16,7 @@
   </project>
 
   <!-- AOSP change in KaiOS -->
-  <project groups="kai" name="platform_build" path="build/make" remote="kaios" revision="gonk_android-10.0.0_r11">
+  <project groups="kai" name="platform_build" path="build/make" remote="b2gos" revision="gonk_android-10.0.0_r11">
     <copyfile src="core/root.mk" dest="Makefile"/>
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
@@ -24,17 +25,19 @@
     <linkfile src="target" dest="build/target"/>
     <linkfile src="tools" dest="build/tools"/>
   </project>
+  <project groups="kai" name="platform_system_core" path="system/core" remote="b2gos" revision="gonk_android-10.0.0_r11"/>
+  <project groups="kai" name="platform_system_vold" path="system/vold" remote="b2gos" revision="gonk_android-10.0.0_r11"/>
+
+  <!-- AOSP change in KaiOS -->
   <project groups="kai" name="platform_build_soong" path="build/soong" remote="kaios" revision="gonk_android-10.0.0_r11">
     <linkfile src="root.bp" dest="Android.bp"/>
     <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
   </project>
   <project groups="kai" name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="kaios" revision="gonk_android-10.0.0_r11"/>
-  <project groups="kai" name="platform_system_core" path="system/core" remote="kaios" revision="gonk_android-10.0.0_r11"/>
-  <project groups="kai" name="platform_system_vold" path="system/vold" remote="kaios" revision="gonk_android-10.0.0_r11"/>
   <project groups="kai" name="platform_art" path="art" remote="kaios" revision="gonk_android-10.0.0_r11"/>
   <project groups="kai" name="platform_external_svox" path="external/svox" remote="kaios" revision="master"/>
   <project groups="kai" name="librecovery" path="librecovery" remote="kaios" revision="master"/>
 
-  <include name="aosp.xml"/>
+  <include name="aosp-q.xml"/>
 
 </manifest>
