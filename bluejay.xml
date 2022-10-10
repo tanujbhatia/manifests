@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="b2g.xml"/>
+  <include name="base-13.xml"/>
+
+  <!-- Change for Google Pixel 6a -->
+  <project path="device/google/bluejay" name="device_google_bluejay" remote="capyloon" revision="gonk_android-13.0.0_r6" />
+
+  <project path="device/google/bluejay-sepolicy" name="device/google/bluejay-sepolicy" groups="device,bluejay" />
+  <project path="device/google/bluejay-kernel" name="device/google/bluejay-kernel" groups="device,bluejay" clone-depth="1" />
+
+</manifest>

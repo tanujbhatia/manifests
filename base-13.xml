@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="aosp-13.xml"/>
+
+  <remove-project name="api-daemon"/>
+  <remove-project name="gecko-b2g"/>
+  <remove-project name="gonk-misc"/>
+  <remove-project name="platform_system_sepolicy"/>
+  <project groups="capyloon" name="api-daemon" path="gonk-misc/api-daemon" remote="capyloon" revision="aosp-13"/>
+  <project groups="capyloon" name="gecko-b2g" path="gecko" remote="capyloon" revision="aosp-13"/>
+  <project groups="capyloon" name="gonk-misc" path="gonk-misc" remote="capyloon" revision="aosp-13"/>
+  <project name="platform_system_sepolicy" path="system/sepolicy" remote="capyloon" revision="gonk_android-13.0.0_r6"/>
+
+  <!-- KaiOS -->
+  <project name="gonk-binder" path="gonk-misc/gonk-binder" remote="capyloon" revision="aosp-13"/>
+
+  <!-- Change in AOSP projects -->
+  <project name="librecovery" path="librecovery" remote="capyloon" revision="master"/>
+  <project name="platform_art" path="art" remote="capyloon" revision="gonk_android-13.0.0_r6"/>
+  <project name="platform_build" path="build/make" remote="capyloon" revision="gonk_android-13.0.0_r6">
+    <copyfile src="core/root.mk" dest="Makefile"/>
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
+    <linkfile src="core" dest="build/core"/>
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh"/>
+    <linkfile src="target" dest="build/target"/>
+    <linkfile src="tools" dest="build/tools"/>
+  </project>
+  <project name="platform_build_soong" path="build/soong" remote="capyloon" revision="gonk_android-13.0.0_r6">
+    <linkfile src="root.bp" dest="Android.bp"/>
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
+  </project>
+  <project name="platform_system_core" path="system/core" remote="capyloon" revision="gonk_android-13.0.0_r6"/>
+  <project name="platform_system_vold" path="system/vold" remote="capyloon" revision="gonk_android-13.0.0_r6"/>
+  <project name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="capyloon" revision="gonk_android-13.0.0_r6"/>
+
+</manifest>
