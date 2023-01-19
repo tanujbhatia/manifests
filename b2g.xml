@@ -11,6 +11,5 @@
   <project groups="capyloon" name="gonk-misc" path="gonk-misc" remote="capyloon" revision="main"/>
   <project groups="capyloon" path="system/sepolicy" name="platform_system_sepolicy" remote="capyloon" revision="capyloon"/>
   <project groups="capyloon" name="nutria" path="nutria" remote="capyloon" revision="main"/>
-  <project groups="capyloon" name="iroh" path="iroh" remote="capyloon" revision="capyloon"/>
 
 </manifest>
