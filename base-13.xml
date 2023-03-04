@@ -10,7 +10,7 @@
   <project groups="capyloon" name="api-daemon" path="gonk-misc/api-daemon" remote="capyloon" revision="aosp-13"/>
   <project groups="capyloon" name="gecko-b2g" path="gecko" remote="capyloon" revision="aosp-13"/>
   <project groups="capyloon" name="gonk-misc" path="gonk-misc" remote="capyloon" revision="aosp-13"/>
-  <project groups="capyloon" name="iroh" path="iroh" remote="capyloon" revision="capyloon"/>
+  <project groups="capyloon" name="beetle" path="ipfsd" remote="capyloon" revision="capyloon"/>
 
   <project name="platform_system_sepolicy" path="system/sepolicy" remote="capyloon" revision="gonk_android-13.0.0_r6"/>
 
