@@ -40,5 +40,5 @@
 
   <include name="aosp-q.xml"/>
 
-  <project groups="capyloon" name="iroh" path="iroh" remote="capyloon" revision="android-10"/>
+  <project groups="capyloon" name="beetle" path="ipfsd" remote="capyloon" revision="android-10"/>
 </manifest>
