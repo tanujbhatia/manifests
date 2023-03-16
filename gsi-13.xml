@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <remote name="capyloon-gsi" fetch="https://github.com/capyloon-gsi/" />
   
   <include name="base-13.xml"/>
 
@@ -25,7 +23,7 @@
   <remove-project name="platform/frameworks/libs/net" />
 
 
-  <project groups="gsi,capyloon"  name="platform_build" path="build/make" remote="capyloon-gsi" revision="gonk_android-13.0.0_r24-gsi">
+  <project groups="gsi,capyloon"  name="platform_build" path="build/make" remote="capyloon" revision="gonk_android-13.0.0_r24-gsi">
     <copyfile src="core/root.mk" dest="Makefile"/>
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
@@ -34,28 +32,25 @@
     <linkfile src="target" dest="build/target"/>
     <linkfile src="tools" dest="build/tools"/>
   </project>
-  <project groups="gsi,capyloon" remote="capyloon-gsi" revision="gonk_android-13.0.0_r24-gsi" name="platform_system_core" path="system/core" />
-  <project groups="gsi,capyloon" remote="capyloon-gsi" revision="gonk_android-13.0.0_r24-gsi" name="platform_system_vold" path="system/vold" />
+  <project groups="gsi,capyloon" remote="capyloon" revision="gonk_android-13.0.0_r24-gsi" name="platform_system_core" path="system/core" />
+  <project groups="gsi,capyloon" remote="capyloon" revision="gonk_android-13.0.0_r24-gsi" name="platform_system_vold" path="system/vold" />
 
-  <!-- TODO: fork to capyloon-gsi -->
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_frameworks_native" path="frameworks/native" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_external_selinux" path="external/selinux" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_bootable_recovery" path="bootable/recovery" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_frameworks_av" path="frameworks/av" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_frameworks_base" path="frameworks/base" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_system_extras" path="system/extras" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_system_netd" path="system/netd" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_system_nfc" path="system/nfc" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_system_bpf" path="system/bpf" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_bionic" path="bionic" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_system_linkerconfig" path="system/linkerconfig" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_hardware_interfaces" path="hardware/interfaces" />
-  <project groups="gsi"  remote="capyloon-gsi" revision="android-13.0.0_r24-td" name="platform_frameworks_libs_net" path="frameworks/libs/net" />
-  <project groups="gsi"  remote="capyloon-gsi" name="vendor_interfaces" path="vendor/interfaces"   revision="android-11.0" />
-  <project groups="gsi"  remote="capyloon-gsi" name="vendor_lptools" path="vendor/lptools"  revision="master" />
-
-
-  <project groups="gsi"  remote="capyloon-gsi" path="device/phh/treble" name="device_phh_treble"   revision="gonk_android-13.0.0" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_frameworks_native" path="frameworks/native" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_external_selinux" path="external/selinux" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_bootable_recovery" path="bootable/recovery" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_frameworks_av" path="frameworks/av" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_frameworks_base" path="frameworks/base" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_system_extras" path="system/extras" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_system_netd" path="system/netd" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_system_nfc" path="system/nfc" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_system_bpf" path="system/bpf" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_bionic" path="bionic" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_system_linkerconfig" path="system/linkerconfig" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_hardware_interfaces" path="hardware/interfaces" />
+  <project groups="gsi"  remote="capyloon" revision="android-13.0.0_r24-td" name="platform_frameworks_libs_net" path="frameworks/libs/net" />
+  <project groups="gsi"  remote="capyloon" name="vendor_interfaces" path="vendor/interfaces"   revision="android-11.0" />
+  <project groups="gsi"  remote="capyloon" name="vendor_lptools" path="vendor/lptools"  revision="master" />
+  <project groups="gsi"  remote="capyloon" path="device/phh/treble" name="device_phh_treble"   revision="gonk_android-13.0.0" />
 
 </manifest>
