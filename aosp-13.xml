@@ -2,9 +2,9 @@
 <manifest>
 
   <remote fetch="https://android.googlesource.com" name="aosp"/>
-  <default revision="refs/tags/android-13.0.0_r6" remote="aosp" sync-j="4" />
+  <default revision="refs/tags/android-13.0.0_r24" remote="aosp" sync-j="4" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r6" />
+  <superproject name="platform/superproject" remote="aosp"  />
   <contactinfo bugurl="go/repo-bug" />
 
   <project path="build/bazel" name="platform/build/bazel" groups="pdk" >
@@ -389,6 +389,9 @@
   <project path="external/python/timeout-decorator" name="platform/external/python/timeout-decorator" groups="pdk" />
   <project path="external/python/typing" name="platform/external/python/typing" groups="pdk" />
   <project path="external/python/uritemplates" name="platform/external/python/uritemplates" groups="vts,pdk" />
+  <project path="external/pandora/avatar" name="platform/external/pandora/avatar" groups="pdk" />
+  <project path="external/python/bumble" name="platform/external/python/bumble" groups="pdk" />
+  <project path="external/pandora/bt-test-interfaces" name="platform/external/pandora/bt-test-interfaces" groups="pdk" />
   <project path="external/rappor" name="platform/external/rappor" groups="pdk" />
   <project path="external/renderscript-intrinsics-replacement-toolkit" name="platform/external/renderscript-intrinsics-replacement-toolkit" groups="pdk" />
   <project path="external/replicaisland" name="platform/external/replicaisland" groups="pdk" />
