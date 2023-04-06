@@ -2,6 +2,7 @@
 <manifest>
   <include name="aosp-13.xml"/>
   <remote fetch="https://github.com/capyloon/" name="capyloon"/>
+  <remote fetch="https://github.com/tanujbhatia/" name="tanujbhatia"/>
 
   <project name="platform/art" path="art"/>
 
@@ -24,7 +25,7 @@
   <project name="platform_system_core" path="system/core" remote="capyloon" revision="gonk_android-13.0.0_r24"/>
   <project name="platform_system_vold" path="system/vold" remote="capyloon" revision="gonk_android-13.0.0_r24"/>
   <project name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="capyloon" revision="gonk_android-13.0.0_r24"/>
-  <project name="platform_system_sepolicy" path="system/sepolicy" remote="capyloon" revision="gonk_android-13.0.0_r6"/>
+  <project name="platform_system_sepolicy" path="system/sepolicy" remote="tanujbhatia" revision="android-13.0.0_r24"/>
 
   <!-- add Capyloon and B2G repos -->
   <project groups="capyloon" name="librecovery" path="librecovery" remote="capyloon" revision="master"/>
