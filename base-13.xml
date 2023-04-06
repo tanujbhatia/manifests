@@ -24,7 +24,7 @@
   <project name="platform_system_core" path="system/core" remote="capyloon" revision="gonk_android-13.0.0_r24"/>
   <project name="platform_system_vold" path="system/vold" remote="capyloon" revision="gonk_android-13.0.0_r24"/>
   <project name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="capyloon" revision="gonk_android-13.0.0_r24"/>
-  <project name="platform_system_sepolicy" path="system/sepolicy" remote="capyloon" revision="gonk_android-13.0.0_r24"/>
+  <project name="platform_system_sepolicy" path="system/sepolicy" remote="capyloon" revision="gonk_android-13.0.0_r6"/>
 
   <!-- add Capyloon and B2G repos -->
   <project groups="capyloon" name="librecovery" path="librecovery" remote="capyloon" revision="master"/>
